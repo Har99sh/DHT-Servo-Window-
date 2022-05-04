@@ -1,0 +1,144 @@
+Script started on 2022-05-03 15:27:10+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+
+
+1.Cual es el directorio actual
+
+\[\e[33m\] \[\e[0m\]whoami
+runner
+\[\e[33m\] \[\e[0m\]pwd
+/home/runner/Harshdeep-Singh
+
+
+2.Cuantos archivos contiene
+
+\[\e[33m\] \[\e[0m\]ls -la
+total 12
+drwxr-xr-x 1 runner runner 80 May  3 15:27 .
+drwxrwxrwx 1 runner runner 82 May  3 15:26 ..
+drwxr-xr-x 1 runner runner 12 Oct 12  2021 .cache
+-rw-r--r-- 1 runner runner 16 May  3 15:27 main.sh
+-rw-r--r-- 1 runner runner 49 Nov 15 17:51 .replit
+-rw-r--r-- 1 runner runner 62 Nov 11 22:09 replit.nix
+-rw-r--r-- 1 runner runner  0 May  3 15:27 typescript
+
+
+3.Fecha de un archivo
+
+\[\e[33m\] \[\e[0m\]date -r .replit
+Mon 15 Nov 2021 05:51:53 PM UTC
+
+
+4.Tamaño de archivos en KB, MB, GB
+
+\[\e[33m\] \[\e[0m\]df -BK
+Filesystem                                                1K-blocks        Used   Available Use% Mounted on
+overlay                                                 1719492840K   43647080K 1588430568K   3% /
+tmpfs                                                        65536K          0K      65536K   0% /dev
+tmpfs                                                     32927404K          0K   32927404K   0% /sys/fs/cgroup
+overlay                                                    2469888K        912K    2464692K   1% /nix
+tmpfs                                                      6585484K      17624K    6567860K   1% /io
+/dev/conman/542                                            2469888K        912K    2464692K   1% /tmp
+/dev/root                                                 25226960K   13820632K   11389944K  55% /mnt/cacache
+/dev/mapper/docker                                      1719492840K   43647080K 1588430568K   3% /etc/hosts
+shm                                                          65536K          0K      65536K   0% /dev/shm
+/dev/disk/by-id/google-cacache-1648978262967-us-west1-a 4260130736K 2809512808K 1450601544K  66% /mnt/cacache/nix
+devtmpfs                                                  32923000K          0K   32923000K   0% /dev/tty
+tmpfs                                                     32927404K          0K   32927404K   0% /proc/acpi
+tmpfs                                                     32927404K          0K   32927404K   0% /proc/scsi
+tmpfs                                                     32927404K          0K   32927404K   0% /sys/firmware
+overlay                                                    2469888K        912K    2464692K   1% /home/runner
+overlay                                                    2469888K        912K    2464692K   1% /home/runner/.cargo/registry
+overlay                                                    2469888K        912K    2464692K   1% /home/runner/.m2/repository
+overlay                                                    2469888K        912K    2464692K   1% /home/runner/.npm
+overlay                                                    2469888K        912K    2464692K   1% /home/runner/.cache/pip
+/dev/mapper/conman-577                                     2469888K        888K    2464716K   1% /home/runner/Harshdeep-Singh
+
+\[\e[33m\] \[\e[0m\]df -BM
+Filesystem                                              1M-blocks     Used Available Use% Mounted on
+overlay                                                  1679193M   42625M  1551202M   3% /
+tmpfs                                                         64M       0M       64M   0% /dev
+tmpfs                                                      32156M       0M    32156M   0% /sys/fs/cgroup
+overlay                                                     2412M       1M     2407M   1% /nix
+tmpfs                                                       6432M      18M     6414M   1% /io
+/dev/conman/542                                             2412M       1M     2407M   1% /tmp
+/dev/root                                                  24636M   13497M    11123M  55% /mnt/cacache
+/dev/mapper/docker                                       1679193M   42625M  1551202M   3% /etc/hosts
+shm                                                           64M       0M       64M   0% /dev/shm
+/dev/disk/by-id/google-cacache-1648978262967-us-west1-a  4160284M 2743665M  1416604M  66% /mnt/cacache/nix
+devtmpfs                                                   32152M       0M    32152M   0% /dev/tty
+tmpfs                                                      32156M       0M    32156M   0% /proc/acpi
+tmpfs                                                      32156M       0M    32156M   0% /proc/scsi
+tmpfs                                                      32156M       0M    32156M   0% /sys/firmware
+overlay                                                     2412M       1M     2407M   1% /home/runner
+overlay                                                     2412M       1M     2407M   1% /home/runner/.cargo/registry
+overlay                                                     2412M       1M     2407M   1% /home/runner/.m2/repository
+overlay                                                     2412M       1M     2407M   1% /home/runner/.npm
+overlay                                                     2412M       1M     2407M   1% /home/runner/.cache/pip
+/dev/mapper/conman-577                                      2412M       1M     2407M   1% /home/runner/Harshdeep-Singh
+
+\[\e[33m\] \[\e[0m\]df -BG
+Filesystem                                              1G-blocks  Used Available Use% Mounted on
+overlay                                                     1640G   42G     1515G   3% /
+tmpfs                                                          1G    0G        1G   0% /dev
+tmpfs                                                         32G    0G       32G   0% /sys/fs/cgroup
+overlay                                                        3G    1G        3G   1% /nix
+tmpfs                                                          7G    1G        7G   1% /io
+/dev/conman/542                                                3G    1G        3G   1% /tmp
+/dev/root                                                     25G   14G       11G  55% /mnt/cacache
+/dev/mapper/docker                                          1640G   42G     1515G   3% /etc/hosts
+shm                                                            1G    0G        1G   0% /dev/shm
+/dev/disk/by-id/google-cacache-1648978262967-us-west1-a     4063G 2680G     1384G  66% /mnt/cacache/nix
+devtmpfs                                                      32G    0G       32G   0% /dev/tty
+tmpfs                                                         32G    0G       32G   0% /proc/acpi
+tmpfs                                                         32G    0G       32G   0% /proc/scsi
+tmpfs                                                         32G    0G       32G   0% /sys/firmware
+overlay                                                        3G    1G        3G   1% /home/runner
+overlay                                                        3G    1G        3G   1% /home/runner/.cargo/registry
+overlay                                                        3G    1G        3G   1% /home/runner/.m2/repository
+overlay                                                        3G    1G        3G   1% /home/runner/.npm
+overlay                                                        3G    1G        3G   1% /home/runner/.cache/pip
+/dev/mapper/conman-577                                         3G    1G        3G   1% /home/runner/Harshdeep-Singh
+
+
+5.Ultimo comando en archivo de texto
+
+\[\e[33m\] \[\e[0m\]df -BG > espaciodirgb.txt
+
+
+
+6.Mostrar archivos con permisos
+
+\[\e[33m\] \[\e[0m\]ls -la
+total 20K
+drwxr-xr-x 1 runner runner  112 May  3 15:31 .
+drwxrwxrwx 1 runner runner   82 May  3 15:26 ..
+drwxr-xr-x 1 runner runner   12 Oct 12  2021 .cache
+-rw-r--r-- 1 runner runner 2.1K May  3 15:31 espaciodirgb.txt
+-rw-r--r-- 1 runner runner   16 May  3 15:27 main.sh
+-rw-r--r-- 1 runner runner   49 Nov 15 17:51 .replit
+-rw-r--r-- 1 runner runner   62 Nov 11 22:09 replit.nix
+-rw-r--r-- 1 runner runner 4.0K May  3 15:30 typescript
+
+
+7. Creación de archivo nuevo
+\[\e[33m\] \[\e[0m\]cat > nuevacarp.txt 
+este es un archivo nuevo creado y ahora lo mostraré el contenido
+^Z[1] + Stopped                    cat 1>nuevacarp
+\[\e[33m\] \[\e[0m\]cat nuevacarp
+este es un archivo nuevo creado y ahora lo mostraré el contenido
+
+
+
+8.Lista de procesos en un archivo de texto
+
+\[\e[33m\] \[\e[0m\]ps -u > procesos.txt
+
+
+9.Lista de mis archivos en un archivo.txt
+
+\[\e[33m\] \[\e[0m\]ls -la > mis_archivos.txt
+
+You have stopped jobs.
+\[\e[33m\] \[\e[0m\]exit
+
+Script done on 2022-05-03 15:47:31+00:00 [COMMAND_EXIT_CODE="0"]
